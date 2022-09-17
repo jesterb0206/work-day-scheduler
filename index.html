@@ -1,94 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
+
   </head>
-
+  
   <body>
+
     <header class="jumbotron-fluid">
-      <div class="container-fluid">
-      <h1 class="display-3">Work Day Scheduler </h1>
+
+      <h1 class="display-3">Work Day Scheduler</h1>
       <p id="currentDay" class="lead"></p>
-      </div>
+      <button class="button-53" role="button">Clear Work Day!</button>
+
     </header>
+    
     <div class="container">
-
-      <div class="row no-border">
-        <div id="time01" class="col-2 border">9:00 AM</div>
-         <textarea id="text01" class="content col-8 border"></textarea>
-          <button id="btn01" type="button" class="col-2 border btn btn-info saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+          
+      <div class="row">
+        
+        <div class ="col-2 my-auto hour time-block">09:00 AM</div>
+        <textarea id="1" class="col-8 input" ></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+        <button class="col-1 deleteBtn"><i class="fas fa-trash-alt"></i></button>
+                  
       </div>
 
-      <div class="row no-border">
-        <div id="time02" class="col-2 border">10:00 AM</div>
-         <textarea id="text02" class="content col-8 border"></textarea>
-          <button id="btn02" type="button" class="col-2 border btn btn-info saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      <div class="row">
+
+        <div class ="col-2 my-auto hour time-block">10:00 AM</div>
+        <textarea id="2" class=" col-8 input"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+        <button class="col-1 deleteBtn"><i class="fas fa-trash-alt"></i></button>
+
       </div>
 
-      <div class="row no-border">
-        <div id="time03" class="col-2 border">11:00 AM</div>
-         <textarea id="text03" class="content col-8 border"></textarea>
-          <button id="btn03" type="button" class="col-2 border btn btn-info saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      <div class="row">
+
+        <div class ="col-2 my-auto hour time-block">11:00 AM</div>
+        <textarea id="3" class=" col-8 input"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+        <button class="col-1 deleteBtn"><i class="fas fa-trash-alt"></i></button>
+       
       </div>
 
-      <div class="row no-border">
-        <div id="time04" class="col-2 border">12:00 PM</div>
-         <textarea id="text04" class="content col-8 border"></textarea>
-          <button id="btn04" type="button" class="col-2 border btn btn-info saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      <div class="row">
+
+        <div class ="col-2 my-auto hour time-block">12:00 PM</div>
+        <textarea id="4" class=" col-8 input"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+        <button class="col-1 deleteBtn"><i class="fas fa-trash-alt"></i></button>
+        
       </div>
 
-      <div class="row no-border">
-        <div id="time05" class="col-2 border">1:00 PM</div>
-         <textarea id="text05" class="content col-8 border"></textarea>
-          <button id="btn05" type="button" class="col-2 border btn btn-info saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      <div class="row">
+
+        <div class ="col-2 my-auto hour time-block">01:00 PM</div>
+        <textarea id="5" class=" col-8 input"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+        <button class="col-1 deleteBtn"><i class="fas fa-trash-alt"></i></button>
+
       </div>
 
-      <div class="row no-border">
-        <div id="time06" class="col-2 border">2:00 PM</div>
-         <textarea id="text06" class="content col-8 border"></textarea>
-          <button id="btn06" type="button" class="col-2 border btn btn-info saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      <div class="row">
+
+        <div class ="col-2 my-auto hour time-block">02:00 PM</div>
+        <textarea id="6" class="col-8 input"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+        <button class="col-1 deleteBtn"><i class="fas fa-trash-alt"></i></button>
+        
       </div>
 
-      <div class="row no-border">
-        <div id="time07" class="col-2 border">3:00 PM</div>
-         <textarea id="text07" class="content col-8 border"></textarea>
-          <button id="btn07" type="button" class="col-2 border btn btn-info saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      <div class="row">
+
+        <div class ="col-2 my-auto hour time-block">03:00 PM</div>
+        <textarea id="7" class=" col-8 input"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+        <button class="col-1 deleteBtn"><i class="fas fa-trash-alt"></i></button>
+        
       </div>
 
-      <div class="row no-border">
-        <div id="time08" class="col-2 border">4:00 PM</div>
-         <textarea id="text08" class="content col-8 border"></textarea>
-          <button id="btn08" type="button" class="col-2 border btn btn-info saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
+      <div class="row">
+
+        <div class ="col-2 my-auto hour time-block">04:00 PM</div>
+        <textarea id="8" class=" col-8 input"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+        <button class="col-1 deleteBtn"><i class="fas fa-trash-alt"></i></button>
+        
       </div>
 
-      <div class="row no-border">
-        <div id="time09" class="col-2 border">5:00 PM</div>
-         <textarea id="text09" class="content col-8 border"></textarea>
-          <button id="btn09" type="button" class="col-2 border btn btn-info saveBtn"><i class="fas fa-cloud-upload-alt"></i></button>
-      </div>
+      <div class="row">
 
+        <div class ="col-2 my-auto hour time-block">05:00 PM</div>
+        <textarea id="9" class=" col-8 input"></textarea>
+        <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+        <button class="col-1 deleteBtn"><i class="fas fa-trash-alt"></i></button>
+           
+      </div>
+          
     </div>
-
+      
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
+
   </body>
+
 </html>
