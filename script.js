@@ -103,7 +103,7 @@ function renderText () {
 
 };
 
-$("#clearDay").on("click", function(){
+$(".button-53").on("click", function(){
     localStorage.clear();
     initPage()
 })
