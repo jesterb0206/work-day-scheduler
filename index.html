@@ -15,24 +15,116 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+    <header class="jumbotron-fluid">
+      <div class="container-fluid">
+      <h1 class="display-3">Work Day Scheduler </h1>
       <p id="currentDay" class="lead"></p>
+      </div>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour">09:00 AM</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" id="9AM"></textarea>
+          <button type="button" class="saveBtn">Save</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour">10:00 AM</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" id="10AM"></textarea>
+          <button type="button" class="saveBtn">Save</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour">11:00 AM</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" id="11AM"></textarea>
+          <button type="button" class="saveBtn">Save</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour">12:00 PM</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" id="12PM"></textarea>
+          <button type="button" class="saveBtn">Save</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour">01:00 PM</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" id="1PM"></textarea>
+          <button type="button" class="saveBtn">Save</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour">02:00 PM</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" id="2PM"></textarea>
+          <button type="button" class="saveBtn">Save</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour">03:00 PM</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" id="3PM"></textarea>
+          <button type="button" class="saveBtn">Save</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour">04:00 PM</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" id="4PM"></textarea>
+          <button type="button" class="saveBtn">Save</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text hour">05:00 PM</span>
+          </div>
+          <textarea class="form-control" aria-label="With textarea" id="5PM"></textarea>
+          <button type="button" class="saveBtn">Save</button>
+        </div>
+      </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

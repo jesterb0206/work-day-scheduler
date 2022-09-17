@@ -1,7 +1,16 @@
+* {
+  --brown: #3E2A1F;
+  --off-white: #F4CFA5;
+  --orange: #FF691B;
+  --yellow: #FDAA26;
+  --green: #636B35;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color: var(--brown);
   }
   
   textarea{
@@ -13,12 +22,15 @@ body {
     padding: 10px;
   }
   
-  .jumbotron {
+  .jumbotron-fluid{
     text-align: center;
-    background-color: transparent;
-    color: black;
+    background-color: var(--brown);
+    color: var(--yellow);
     border-radius: 0;
-    border-bottom: 10px solid black;
+    border: 10px solid var(--off-white);
+    line-height: 2;
+    padding: 10px;
+    margin-bottom: 20px;
   }
   
   .description{

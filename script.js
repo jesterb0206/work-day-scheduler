@@ -1,0 +1,1 @@
+var currentDate = moment().format('dddd');
