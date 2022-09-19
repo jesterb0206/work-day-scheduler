@@ -32,7 +32,7 @@ textarea{
   border: 10px solid var(--off-white);
   line-height: 2;
   padding: 10px;
-  margin-bottom: 33px;
+  margin-bottom: 20px;
 }
 
 .display-4 {
@@ -101,6 +101,7 @@ header {
   border-right: 4px solid var(--off-white);
   border-top: 2px solid var(--off-white);
   border-bottom: 2px solid var(--off-white);
+  border-radius: none;
 }
 
 .description{
@@ -197,6 +198,9 @@ header {
   }
   body {
     font-size: 16px;
+  }
+  .jumbotron-fluid {
+    margin-bottom: 33px;
   }
   .row {
     height: 170px;
