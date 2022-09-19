@@ -20,6 +20,8 @@ textarea{
   resize: none;
   color: #000000;
   padding: 10px;
+  border-left: 6px solid var(--off-white);
+  border-radius: none;
 }
 
 .jumbotron-fluid {
@@ -30,7 +32,7 @@ textarea{
   border: 10px solid var(--off-white);
   line-height: 2;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
 
 .display-4 {
@@ -116,6 +118,7 @@ header {
   border-right: 2px solid var(--off-white);
   border-top: 4px solid var(--off-white);
   border-bottom: 4px solid var(--off-white);
+  border-radius: none;
 }
 
 .hour {
@@ -176,7 +179,7 @@ header {
   background-color: var(--brown);
   color: var(--yellow);
   border-radius: 0;
-  font-size: 24px;
+  font-size: 32px;
   transition-timing-function: 1s ease-in-out;
 }
 
@@ -184,7 +187,7 @@ header {
   background-color: var(--brown);
   color: var(--yellow);
   border-radius: 0;
-  font-size: 24px;
+  font-size: 32px;
   transition-timing-function: 1s ease-in-out;
 }
 
@@ -196,13 +199,13 @@ header {
     font-size: 16px;
   }
   .row {
-    height: 75px;
+    height: 170px;
   }
   .saveBtn i:hover {
-    font-size: 20px;
+    font-size: 24px;
   }
   .deleteBtn i:hover {
-    font-size: 20px;
+    font-size: 24px;
   }
   .display-3 {
     display: none;
