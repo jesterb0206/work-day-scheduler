@@ -28,7 +28,7 @@ textarea{
   text-align: center;
   background-color: var(--brown);
   color: var(--yellow);
-  border-radius: 0;
+  border-radius: none;
   border: 10px solid var(--off-white);
   line-height: 2;
   padding: 10px;
@@ -106,10 +106,12 @@ header {
 
 .description{
   white-space: pre-wrap;
+  border-radius: none;
 }
 
 .time-block{
   text-align: center;
+  border-radius: none;
 }
 
 .row {
@@ -125,6 +127,7 @@ header {
 .hour {
   background-color: var(--brown);
   color: var(--yellow);
+  border-radius: none;
 }
 
 .past {
