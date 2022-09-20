@@ -14,7 +14,7 @@ body {
   background-color: var(--brown);
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -43,7 +43,7 @@ header {
   font-family: 'Limelight', cursive;
 }
 
-.button-53 {
+.clearDayBtn {
   background-color: var(--orange);
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
@@ -70,11 +70,11 @@ header {
   margin: auto;
 }
 
-.button-53:focus {
+.clearDayBtn:focus {
   outline: 0;
 }
 
-.button-53:after {
+.clearDayBtn:after {
   content: '';
   position: absolute;
   border: 1px solid var(--off-white);
@@ -84,13 +84,13 @@ header {
   height: calc(100% - 1px);
 }
 
-.button-53:hover:after {
+.clearDayBtn:hover:after {
   bottom: 2px;
   left: 2px;
 }
 
 @media (min-width: 768px) {
-  .button-53 {
+  .clearDayBtn {
     padding: .75rem 3rem;
     font-size: 1.25rem;
   }
@@ -196,7 +196,7 @@ header {
 }
 
 @media (max-width: 768px) {
-  .button-53 {
+  .clearDayBtn {
     width: 75%;
   }
   body {
