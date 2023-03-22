@@ -1,87 +1,84 @@
 * {
-  --brown: #3E2A1F;
-  --off-white: #F4CFA5;
-  --orange: #FF691B;
-  --yellow: #FDAA26;
-  --green: #636B35;
+  --brown: #3e2a1f;
+  --green: #636b35;
+  --off-white: #f4cfa5;
+  --orange: #ff691b;
+  --yellow: #fdaa26;
 }
 
 body {
+  background-color: var(--brown);
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
   line-height: 1;
-  background-color: var(--brown);
-}
-
-textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  padding: 10px;
-  border-left: 6px solid var(--off-white);
-  border-radius: none;
-}
-
-.jumbotron-fluid {
-  text-align: center;
-  background-color: var(--brown);
-  color: var(--yellow);
-  border-radius: none;
-  border: 10px solid var(--off-white);
-  line-height: 2;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.display-4 {
-  display: none;
 }
 
 header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   font-family: 'Limelight', cursive;
+}
+
+.jumbotron-fluid {
+  background-color: var(--brown);
+  border-radius: none;
+  border: 10px solid var(--off-white);
+  color: var(--yellow);
+  line-height: 2;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+#currentDay {
+  font-size: 24px;
+  max-width: 75%;
 }
 
 .clearDayBtn {
   background-color: var(--orange);
-  border: 0 solid #E5E7EB;
+  border: 0 solid #e5e7eb;
   box-sizing: border-box;
   color: var(--off-white);
+  cursor: pointer;
   display: flex;
   font-family: 'Carter One', cursive;
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
   line-height: 1.75rem;
-  padding: .75rem 1.65rem;
+  margin-bottom: 16px;
+  max-width: 400px;
+  padding: 0.75rem 1.65rem;
+  position: relative;
   position: relative;
   text-align: center;
-  text-decoration: none #000000 solid;
   text-decoration-thickness: auto;
-  width: 100%;
-  max-width: 400px;
-  position: relative;
-  cursor: pointer;
+  text-decoration: none #000000 solid;
+  touch-action: manipulation;
   transform: rotate(-2deg);
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: auto;
+  width: 100%;
+}
+
+.clearDayBtn:after {
+  border: 1px solid var(--off-white);
+  bottom: 4px;
+  content: '';
+  height: calc(100% - 1px);
+  left: 4px;
+  position: absolute;
+  width: calc(100% - 1px);
 }
 
 .clearDayBtn:focus {
   outline: 0;
-}
-
-.clearDayBtn:after {
-  content: '';
-  position: absolute;
-  border: 1px solid var(--off-white);
-  bottom: 4px;
-  left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
 }
 
 .clearDayBtn:hover:after {
@@ -91,136 +88,165 @@ header {
 
 @media (min-width: 768px) {
   .clearDayBtn {
-    padding: .75rem 3rem;
     font-size: 1.25rem;
+    padding: 0.75rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .clearDayBtn {
+    width: 75%;
+  }
+
+  #currentDay {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .jumbotron-fluid {
+    margin-bottom: 33px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: 16px;
+  }
+
+  #currentDay {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 14px;
   }
 }
 
 .container {
+  border-bottom: 2px solid var(--off-white);
   border-left: 4px solid var(--off-white);
+  border-radius: none;
   border-right: 4px solid var(--off-white);
   border-top: 2px solid var(--off-white);
-  border-bottom: 2px solid var(--off-white);
-  border-radius: none;
-}
-
-.description{
-  white-space: pre-wrap;
-  border-radius: none;
-}
-
-.time-block{
-  text-align: center;
-  border-radius: none;
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
+  border-bottom: 4px solid var(--off-white);
   border-left: 2px solid var(--off-white);
+  border-radius: none;
   border-right: 2px solid var(--off-white);
   border-top: 4px solid var(--off-white);
-  border-bottom: 4px solid var(--off-white);
-  border-radius: none;
+  height: 80px;
 }
 
 .hour {
   background-color: var(--brown);
-  color: var(--yellow);
   border-radius: none;
+  color: var(--yellow);
 }
 
-.past {
-  background-color: #FDAA26;
-  color: black;
+.time-block {
+  align-items: center;
+  border-radius: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-.present {
-  background-color: #FF691B;
-  color: black;
-}
-
-.future {
-  background-color: #636B35;
-  color: white;
+textarea {
+  background: transparent;
+  border-left: 6px solid var(--off-white);
+  border-radius: none;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 10px;
+  resize: none;
 }
 
 .saveBtn {
   background-color: var(--brown);
-  color: var(--yellow);
-  border-radius: 0;
-  padding: 0;
+  border-bottom: none;
   border-left: 6px solid var(--off-white);
+  border-radius: 0;
   border-right: none;
   border-top: none;
-  border-bottom: none;
-}
-
-.deleteBtn {
-  background-color: var(--brown);
   color: var(--yellow);
-  border-radius: 0;
   padding: 0;
-  border-left: 6px solid var(--off-white);
-  border-right: none;
-  border-top: none;
-  border-bottom: none;
 }
 
 .saveBtn:hover {
   background-color: var(--brown);
-  color: var(--yellow);
   border-radius: 0;
+  color: var(--yellow);
 }
 
-.deleteBtn:hover {
-  background-color: var(--brown);
-  color: var(--yellow);
-  border-radius: 0;
+.saveBtn i {
+  transition: 0.5s ease-in-out;
 }
 
 .saveBtn i:hover {
   background-color: var(--brown);
-  color: var(--yellow);
   border-radius: 0;
-  font-size: 32px;
-  transition-timing-function: 1s ease-in-out;
+  color: var(--yellow);
+  transform: scale(1.33);
+}
+
+.deleteBtn {
+  background-color: var(--brown);
+  border-bottom: none;
+  border-left: 6px solid var(--off-white);
+  border-radius: 0;
+  border-right: none;
+  border-top: none;
+  color: var(--yellow);
+  padding: 0;
+}
+
+.deleteBtn:hover {
+  background-color: var(--brown);
+  border-radius: 0;
+  color: var(--yellow);
+}
+
+.deleteBtn i {
+  transition: 0.5s ease-in-out;
 }
 
 .deleteBtn i:hover {
   background-color: var(--brown);
-  color: var(--yellow);
   border-radius: 0;
-  font-size: 32px;
-  transition-timing-function: 1s ease-in-out;
+  color: var(--yellow);
+  transform: scale(1.25);
 }
 
 @media (max-width: 768px) {
-  .clearDayBtn {
-    width: 75%;
-  }
-  body {
-    font-size: 16px;
-  }
-  .jumbotron-fluid {
-    margin-bottom: 33px;
-  }
   .row {
     height: 170px;
   }
-  .saveBtn i:hover {
-    font-size: 24px;
-  }
-  .deleteBtn i:hover {
-    font-size: 24px;
-  }
-  .display-3 {
-    display: none;
-  }
-  .display-4 {
-    display: block;
-  }
-  .lead {
-    font-size: 16px;
-  }
+}
+
+.past {
+  background-color: #fdaa26;
+}
+
+.present {
+  background-color: #ff691b;
+}
+
+.future {
+  background-color: #636b35;
 }

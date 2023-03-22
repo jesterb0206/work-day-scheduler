@@ -1,137 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
     />
-    <link 
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
     />
-    <link 
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
     />
-    <link 
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
-
   </head>
-  
   <body>
-
+    <!-- Heading -->
     <header class="jumbotron-fluid">
-
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <h1 class="display-4">Work Day Scheduler</h1>
+      <h1>Work Day Scheduler</h1>
       <p id="currentDay" class="lead"></p>
       <button class="clearDayBtn">Clear Work Day!</button>
-
     </header>
-    
+    <!-- Container -->
     <div class="container">
-          
+      <!-- 9 AM -->
       <div class="row">
-        
-        <div class ="col-2 my-auto hour time-block rounded-0">09:00 AM</div>
-        <textarea id="9" class="col-6 input rounded-0" ></textarea>
+        <div class="col-2 my-auto hour time-block rounded-0">09:00 AM</div>
+        <textarea id="9" class="col-6 input rounded-0"></textarea>
         <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-        <button class="col-2 deleteBtn"><i class="fas fa-trash-alt"></i></button>
-                  
+        <button class="col-2 deleteBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
-
+      <!-- 10 AM -->
       <div class="row">
-
-        <div class ="col-2 my-auto hour time-block rounded-0">10:00 AM</div>
-        <textarea id="10" class=" col-6 input rounded-0"></textarea>
+        <div class="col-2 my-auto hour time-block rounded-0">10:00 AM</div>
+        <textarea id="10" class="col-6 input rounded-0"></textarea>
         <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-        <button class="col-2 deleteBtn"><i class="fas fa-trash-alt"></i></button>
-
+        <button class="col-2 deleteBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
-
+      <!-- 11 AM -->
       <div class="row">
-
-        <div class ="col-2 my-auto hour time-block rounded-0">11:00 AM</div>
-        <textarea id="11" class=" col-6 input rounded-0"></textarea>
+        <div class="col-2 my-auto hour time-block rounded-0">11:00 AM</div>
+        <textarea id="11" class="col-6 input rounded-0"></textarea>
         <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-        <button class="col-2 deleteBtn"><i class="fas fa-trash-alt"></i></button>
-       
+        <button class="col-2 deleteBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
-
+      <!-- 12 PM -->
       <div class="row">
-
-        <div class ="col-2 my-auto hour time-block rounded-0">12:00 PM</div>
-        <textarea id="12" class=" col-6 input rounded-0"></textarea>
+        <div class="col-2 my-auto hour time-block rounded-0">12:00 PM</div>
+        <textarea id="12" class="col-6 input rounded-0"></textarea>
         <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-        <button class="col-2 deleteBtn"><i class="fas fa-trash-alt"></i></button>
-        
+        <button class="col-2 deleteBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
-
+      <!-- 1 PM -->
       <div class="row">
-
-        <div class ="col-2 my-auto hour time-block rounded-0">01:00 PM</div>
-        <textarea id="13" class=" col-6 input rounded-0"></textarea>
+        <div class="col-2 my-auto hour time-block rounded-0">01:00 PM</div>
+        <textarea id="13" class="col-6 input rounded-0"></textarea>
         <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-        <button class="col-2 deleteBtn"><i class="fas fa-trash-alt"></i></button>
-
+        <button class="col-2 deleteBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
-
+      <!-- 2 PM -->
       <div class="row">
-
-        <div class ="col-2 my-auto hour time-block rounded-0">02:00 PM</div>
+        <div class="col-2 my-auto hour time-block rounded-0">02:00 PM</div>
         <textarea id="14" class="col-6 input rounded-0"></textarea>
         <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-        <button class="col-2 deleteBtn"><i class="fas fa-trash-alt"></i></button>
-        
+        <button class="col-2 deleteBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
-
+      <!-- 3 PM -->
       <div class="row">
-
-        <div class ="col-2 my-auto hour time-block rounded-0">03:00 PM</div>
-        <textarea id="15" class=" col-6 input rounded-0"></textarea>
+        <div class="col-2 my-auto hour time-block rounded-0">03:00 PM</div>
+        <textarea id="15" class="col-6 input rounded-0"></textarea>
         <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-        <button class="col-2 deleteBtn"><i class="fas fa-trash-alt"></i></button>
-        
+        <button class="col-2 deleteBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
-
+      <!-- 4 PM -->
       <div class="row">
-
-        <div class ="col-2 my-auto hour time-block rounded-0">04:00 PM</div>
-        <textarea id="16" class=" col-6 input rounded-0"></textarea>
+        <div class="col-2 my-auto hour time-block rounded-0">04:00 PM</div>
+        <textarea id="16" class="col-6 input rounded-0"></textarea>
         <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-        <button class="col-2 deleteBtn"><i class="fas fa-trash-alt"></i></button>
-        
+        <button class="col-2 deleteBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
-
+      <!-- 5 PM -->
       <div class="row">
-
-        <div class ="col-2 my-auto hour time-block rounded-0">05:00 PM</div>
-        <textarea id="17" class=" col-6 input rounded-0"></textarea>
+        <div class="col-2 my-auto hour time-block rounded-0">05:00 PM</div>
+        <textarea id="17" class="col-6 input rounded-0"></textarea>
         <button class="col-2 saveBtn"><i class="fas fa-save"></i></button>
-        <button class="col-2 deleteBtn"><i class="fas fa-trash-alt"></i></button>
-           
+        <button class="col-2 deleteBtn">
+          <i class="fas fa-trash-alt"></i>
+        </button>
       </div>
-          
     </div>
-      
+    <!-- Script Tags -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
-
   </body>
-
 </html>
