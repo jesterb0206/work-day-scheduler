@@ -12,10 +12,10 @@ N/A
 
 A few things to note:
 
-![Work Day Scheduler Screenshot](Assets/Images/work-day-scheduler.png)
+![Work Day Scheduler Screenshot](images/work-day-scheduler.png)
 
 - When you open the Work Day Scheduler, the current day is displayed at the top of the calendar, along with the current time in hours, minutes and seconds.
-- As you scroll down you'll be presented with time blocks for standard business hours. When you view the time blocks you'll see that each time block is color-coded to indicate whether it is in the past, present, or future. The past is represented by the color yellow, the present is represented by the color orange, and the future is represented by the color green. 
+- As you scroll down you'll be presented with time blocks for standard business hours. When you view the time blocks you'll see that each time block is color-coded to indicate whether it is in the past, present, or future. The past is represented by the color yellow, the present is represented by the color orange, and the future is represented by the color green.
 - When you click into a time block you can enter an event. If you wish to save it hover over the floppy disk icon and press it. You'll see that when you refresh the page the event/events persist because they're saved in local storage. Once an event is saved you can delete it by hovering over the trash can icon and pressing it. If you have events saved in multiple time blocks that you wish to delete press the Clear Work Day! button and your Work Day Scheduler will be completely initialized.
 
 https://jesterb0206.github.io/work-day-scheduler/
