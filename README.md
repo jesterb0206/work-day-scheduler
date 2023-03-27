@@ -72,7 +72,9 @@ Work Day Scheduler wouldn't be complete without the following sources:
 
 7. https://stackoverflow.com/questions/44712653/auto-refresh-at-the-top-of-every-hour - Stack Overflow (I used a code snippet from here)
 
-8. https://www.1001fonts.com/1920s+google-web-fonts.html?page=1 - 1001 Fonts (I used Carter One, Limelight and Yanone Kaffeesatz for my web application)
+8. https://www.veryicon.com/icons/miscellaneous/color-work-icon/schedule-20.html - Very Icon (I used the Schedule Icon for my favicon)
+
+9. https://www.1001fonts.com/1920s+google-web-fonts.html?page=1 - 1001 Fonts (I used Carter One, Limelight and Yanone Kaffeesatz for my web application)
 
 <br>
 
