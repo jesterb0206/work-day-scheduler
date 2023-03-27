@@ -20,7 +20,17 @@
 
 <br>
 
-**To-Do**
+- [Work Day Scheduler](#work-day-scheduler)
+  * [License](#license)
+  * [Deployment Link](#deployment-link)
+  * [Table of Contents](#table-of-contents)
+  * [Description](#description)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [Badges](#badges)
+  * [Questions](#questions)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 <br>
 
